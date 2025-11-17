@@ -37,6 +37,12 @@ A partir de una clase Person con 3 propiedades (nombre, edad y salario) que se i
 - Consulta 5: Calcular el salario promedio
 - Consulta 6: Calcular la edad total
 
+## GenericClasses_GenericStack
+
+Console application that implements a generic stack built on a generic class and a generic list. The GenericStack class contains three methods: one to add elements, one to extract the last added element, and one to display all contained elements. The stack works with all types of data; a test with integers, another with strings, and another with a custom Person class are included.
+
+Aplicación de consola que implementa una pila genérica construida en base a una clase genérica y una lista genérica, la clase GenericStack contiene tres métodos, uno para agregar elementos, otro para extraer el último elemento agregado y otro para mostrar todos los elementos contenidos, la pila funciona con todo tipo de datos, se incluye una prueba con enteros, otra con cadenas y otra con una clase Person personalizada.
+
 #
 
 ### Course: Advanced C# Programming in .NET Core of EDUCBA
