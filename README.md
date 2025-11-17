@@ -37,6 +37,6 @@ A partir de una clase Person con 3 propiedades (nombre, edad y salario) que se i
 - Consulta 5: Calcular el salario promedio
 - Consulta 6: Calcular la edad total
 
-
-### Exercices of module 1 of course Advanced C# Programming in .NET Core of EDUCBA 
+### Course Advanced C# Programming in .NET Core of EDUCBA
+### Exercices of module 1: Advanced Linguistic Functions  
 https://www.coursera.org/learn/advanced-c-programming-in-net-core/
