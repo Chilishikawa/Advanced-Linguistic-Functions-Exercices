@@ -9,22 +9,22 @@
             while (true)
             {
                 Console.WriteLine();
-                Console.WriteLine ("Que desea hacer:");
-                Console.WriteLine("1. Agregar una nueva persona.");
-                Console.WriteLine("2. Mostrar la lista de personas registradas.");
-                Console.WriteLine("3. Filtrar por edad mayor de 30 años.");
-                Console.WriteLine("4. Ordenar por nombre.");
-                Console.WriteLine("5. Calcular el salario medio");
-                Console.WriteLine("6. Calcular la edad total");
+                Console.WriteLine("What would you like to do:");
+                Console.WriteLine("1. Add a new person.");
+                Console.WriteLine("2. Show the list of registered people.");
+                Console.WriteLine("3. Filter by age greater than 30 years.");
+                Console.WriteLine("4. Sort by name.");
+                Console.WriteLine("5. Calculate the average salary.");
+                Console.WriteLine("6. Calculate the total age.");
 
-                string opcion = Console.ReadLine();
+                string option = Console.ReadLine();
 
-                switch (opcion)
+                switch (option)
                 {
                     case "2":
                         if (personList.Count() == 0)
                         {
-                            Console.WriteLine("No hay personas registradas.");
+                            Console.WriteLine("There are no registered people.");
                             Console.WriteLine();
                         }
                         else
@@ -35,8 +35,9 @@
                             }
                         }
                         break;
+
                     case "1":
-                        Console.WriteLine("Introduzca datos de una nueva persona ->");
+                        Console.WriteLine("Enter data for a new person ->");
                         Console.WriteLine("Name:");
                         string name = Console.ReadLine();
                         Console.WriteLine("Age:");
@@ -54,10 +55,11 @@
                         personList.Add(newPerson);
                         Console.WriteLine();
                         break;
+
                     case "3":
                         if (personList.Count() == 0)
                         {
-                            Console.WriteLine("No hay personas registradas.");
+                            Console.WriteLine("There are no registered people.");
                             Console.WriteLine();
                         }
                         else
@@ -69,25 +71,27 @@
                             }
                         }
                         break;
+
                     case "4":
                         if (personList.Count() == 0)
                         {
-                            Console.WriteLine("No hay personas registradas.");
+                            Console.WriteLine("There are no registered people.");
                             Console.WriteLine();
                         }
                         else
                         {
-                            var  ordered  = personList.OrderBy(p => p.Name);
+                            var ordered = personList.OrderBy(p => p.Name);
                             foreach (Person p in ordered)
                             {
                                 Console.WriteLine($"Person: name: {p.Name}, age: {p.Age}, salary: {p.Salary}");
                             }
                         }
                         break;
+
                     case "5":
                         if (personList.Count() == 0)
                         {
-                            Console.WriteLine("No hay personas registradas.");
+                            Console.WriteLine("There are no registered people.");
                             Console.WriteLine();
                         }
                         else
@@ -96,10 +100,11 @@
                             Console.WriteLine($"Average salary is: {averageSalary}");
                         }
                         break;
+
                     case "6":
                         if (personList.Count() == 0)
                         {
-                            Console.WriteLine("No hay personas registradas.");
+                            Console.WriteLine("There are no registered people.");
                             Console.WriteLine();
                         }
                         else
@@ -110,6 +115,7 @@
                         break;
                 }
             }
+
         }
 
         public class Person
